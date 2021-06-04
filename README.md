@@ -1,25 +1,32 @@
 # Metode-Numerik-2021
 Berdasarkan praktikum Metode Numerik yang telah dilaksanakan selama semester 4 ini, kita telah mengenal berbagai macam hal terkait pemrograman. Dalam praktikum ini platform yang digunakan adalah Anaconda dimana Anaconda ini merupakan distribusi dari bahasa pemrograman Phyton. Dalam Anaconda itu sendiri terdapat paket yang disebut dengan conda yang memiliki beberapa library diantaranya NumPy, SciPy, Pandas, dan Jupiterlab. Library inilah yang biasanya digunakan dalam praktikum metode numerik 2021 ini. Berdasarkan  praktikum yang telah dilakukan, terdapat 5 Modul yang telah dilakukan dimana Modul 1 adalah pengenalan bahasa pemrograman Phyton dan Anaconda lalu di Modul 2 adalah materi mengenai akar-akar persamaan, kemudian Modul 3 tentang Sistem Persamaan linier dan matriks, Modul 4 tentang integrasi numerik dan yang terakhir adalah Modul 5 Persamaan Diferensial Biasa. Dalam Modul 2 sampai Modul 5 kita telah mengenal banyak metode yang digunakan dalam tiap modulnya. Metode tersebut akan dijelaskan sebagai berikut:
-# Modul 2
-# Modul 3
-# Modul 4
+# Modul 2: : Metode Setengah interval, Metode interpolasi linier, Metode Newton-Rhapson, Metode Secant, dan Metode Iterasi
+Bentuk persamaan kuadrat yang meliputi ax^2 + bx + c = 0 mudah dicari akar akar persamaannya. namun untuk polinomial yang memiliki derajat 3 atau 4, perumusannya akan terlihat sangat kompleks dan jarang digunakan. Selain itu, tidak mungkin diselesaikan secara eksplisit. persamaan dengan derajat yang lebih tinggi tidak ada rumus yang dapat digunakan untuk menyelesaikannya. Cara satu-satunya adalah dengan menggunakan metode numerik. Penyelesaian numerik dilakukan dengan iterasi, sehingga setiap hasil yang didapat selalu lebih teliti dibandingkan iterasi sebelumnya sehingga bentuk persamaan tersebut secara perkiraan diperoleh hasil yang mendekati penyelesaian eksak. Dari hal tersebut, pada praktikum modul 2 mengkaji akar-akar persamaan dengan pendekatan metode numerik. metode dalam penyelesaian terdapat 5 metode yang dipelajari dalam praktikum ini. pada metode setengah interval, metode ini adalah metode psling sederhana. kelebihannya dapat menentukan akar yang dicari (selalu konvergen). metode ini memiliki kekurangan yang hanya dilakukan bila ada akar persamaan interval yang diberikan, proses iterasi yang banyak, dan beberapa akar interval yang diberikan maka hanya satu akar yang ditemukan. Metode Interpolasi linier dilakukan dengan 2 titik pertama dengan garis interpolasi memotong sumbu x dan di titik perpotongan menghasilkan pendekatan akar pertama kemudian dievaluasi di fungsi nonlnier dan diperoleh fungsi tersebut kemudian di interpolasi malalui ujung sebelumnya dann memperoleh pendekatan akar setelahnya. Metode newton Rhapson adalah metode yang sering digunakan, sederhana dan handal dalam persamaan non linier. laju konvergensi pada metode ini lebih cepat. Nmaun, syarat yang dipenuhi yaitu taksiran awal harus sedekat dengan nilai eksaknya. kelemahannya divergen dan sulit mencari F'(xn) dan penetapan nilai awal (xn). Metode secant memiliki pendekatan f dengan ungkapan berbeda yang didasarkan taksiran akar sebelumnya. metode ini Disebut juga Metode Interpolasi Linear namun prosesnya tidak dilakukan penjepitan akar [x0, x1] tidak harus mengandung akar yang akan dicari, sehingga f(x0) dan f(x1) bisa bertanda sama. Metode Iterasi memiliki dasar aplikasi algoritma sederhana yang diulang-ulang pada sistem persamaantersebut hingga keadan konvergen tercapai (sousi sistem persamaan). banyak langkah yang harus dilakukan dan tidak terprediksi. kelebihannya menggunakan memori komputer yang sedikit. kekurangannya jika sistem persamaannya tidak kondusif, konvergensi sistem persamaan tidak terjamin
+# Modul 3: Sistem Persamaan Linier dan Matriks:Metode Gauss, Metode Gauss-Jordan, Metode Gauss-Seidel, Metode Jacobi
+Pada praktikum Metode Numerik modul 3 ini membahas tentang sistem persamaan linear dan matriks dengan berbagai metode penyelesaiannya. Metode langsung adalah metode dengan tidak adanya kesalahan pembulatan atau lain-lainnya, akan memberikan penyelesaian yang tepat dalam jumlah operasi aritmetika elementer yang terbatas banyaknya. Metode tidak langsung atau disebut juga metode iterasi adalah dimulai dengan pendekatan permulaan menggunakan algoritma yang sesuai, untuk mendapatkan hasil pendekatan yang lebih baik. Sedangkan dalam sistem persamaan linear terdapat metode langsung dengan metode tidak langsung Metode dasar yang digunakan adalah eliminasi Gauss dan ada berbagai pilihan metode yang bervariasi dalam efisiensi dan kecermatan hitungan. Metode iterasi bervariasi dalam algoritma dan kecepatan konvergensi. Kelebihannya dari sebuah metode iterasi adalah kesederhanaan dan keseragamannya dari operasi yang dilakukan pada sistem operasi itu sendiri yang memudahkan penulis dalam menghitung suatu bilangan ataupun matriks.Pada metode iterasi Jacobi, nilai hampiran dikoreksi secara serentak. Artinya nilai hampiran mengacu pada nilai hampiran sebelumnya. Sedangkan pada metode Gauss-Seidel, nilai hampiran dihitung berdasarkan nilai hampiran terbaru atau terakhir. Metode Gauss dan Gauss-Jordan menampilkan hasil yang sedikit berbeda pada jenis matriks yang ditampilkan. Pada metode Gauss, didapatkan matriks dengan jenis matriks segitiga atas, sedangkan hasil pada metode Gauss-Jordan yaitu matriks segitiga bawah. Tetapi, keduanya memiliki persamaan yaitu terbentuknya matriks identitas.Menurut hasil yang diselesaikan dengan 4 metode tersebut lebih akurat penyelesaiannya menggunakan metode gauss seidel. Saat menyelesaikan dengan metode tersebut mendapatkan hasil yang yang baik dengan proses iterasinya hingga mendapatkan nilai tiap intervalnya.
+# Modul 4: Integrasi Numerik Metode Trapesium Banyak Pias & Simpson 1/3
+Metode integrasi trapesium akan menghitung luasan kurva f(x) dengan batasan tertentu yang didekati sebagai luasan trapesium. Metode trapesium banyak pias digunakan untuk mengurangi kesalahan yang terjadi dimana kurva lengkung didekati oleh sejumlah garis lurus, sehingga terbentuk banyak pias.
+Sedangkan Metode Simpson merupakan metode integral numerik yang menggunakan fungsi polinomial dengan order lebih tinggi dimana pada metode Simpson 1/3 digunakan tiga titik data (polinomial order dua).
 # Modul 5 Persamaan Diferensial Biasa : Metode Euler & Heun
 Metode Euler merupakan metode paling sederhana yang diturunkan dari deret Taylor. Metode Heun merupakan salah satu peningkatan dari metode Euler. Metode ini melibatkan 2 buah persamaan. Persamaan pertama disebut sebagai persamaan prediktor yang digunakan untuk memprediksi nilai integrasi awal. Persamaan kedua disebut sebagai persamaan korektor yang mengoreksi hasil integrasi awal. Berdasarkan hasil yang telah didapatkan pada praktikum ini, diperoleh hasil yang menunjukkan pada kedua metode memiliki nilai yang hampir sama. Pada hasil running yang diperoleh memiliki perbedaan nilai yang kecil. Oleh karena itu kedua metode bisa dijadikan pilihan dalam proses perhitungan persamaan diferensial. Pada metode Heun memiliki keunggulan Karena metode heun sendiri merupakan peningkatan dari metode euler yang dimana melibatkan 2 buah persamaan yaitu ada prediksi dan koreksi. Metode euler sendiri masih bisa dikatakan baik untuk digunakan karena memiliki kelebihan dalam perhitungannya yang lebih mudah dilakukan dan lebih sederhana. Sehingga kedua metode ini dapat digunakan dalam menyelesaikan persamaan diferensial.
 
 
 # Tim Penyusun 
 KELOMPOK 2 
-1. Frendy Marselino_26501191
-2. Safira Ashilah_26050119140116_Oseanografi B
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
-11. 
+1. Farras Daffa Arfastya_26050119140122_Oseanografi A
+2. Elisabeth Riris_26050119140127_Oseanografi A
+3. Alief Wahyu Shafira_26050119140129_Oseanografi A
+4. Frendy Marselino_2650119140130_Oseanografi A
+5. Rizqi Innasya Salsabila_26050119140138_Oseanografi A
+6. Devi Nuzulia Rahmawati_2605011914015_Oseanografi B
+7. Safira Ashilah_26050119140116_Oseanografi B
+8. Gerrald Alfa Daud_260501191140121_Oseanografi B
+9. Raka Aditya N_2605011914024_Oseanografi B
+10. Aqshal Alfatih_26050119140136_Oseanografi B
+11. Amanda Liestyarani_26050119140139_Oseanografi B
+12. Luthfia Nur Aisyah_26050119140143_Oseanografi B
 
 # Saran untuk Pengembangan :
-# Ucapan terima kasih :
+penjelasan materi dibuat lebih simpel dikarenakan banyak mahasiswa yang masih belum sepenuhnya mengerti mengenai pembuatan skrip. selian itu, tempo penjelasan diperlambat lagi.
+# Ucapan:
+terimakasih yang sebesar-besarnya kepada Tuhan yang Maha Esa untuk rahmat dan hidayah yang diberikan. selain itu, kami juga ingin berterimakasih kepada dosen pengampu dan tim asisten metnum 2021 yang mengangkat materi ini serta dengan sabar mengajari mahasiswa.
